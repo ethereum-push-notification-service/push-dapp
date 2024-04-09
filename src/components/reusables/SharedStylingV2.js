@@ -209,8 +209,9 @@ export const AInlineV2 = styled.a`
   letter-spacing: inherit;
   padding: 0px;
   text-transform: initial;
-  cursor:${(props)=>props.cursor || 'default'};
-
+  cursor: ${(props) => props.cursor || 'default'};
+  text-decoration: ${(props) => props.textDecoration || 'none'};
+  margin: ${(props) => props.margin || 0};
 `;
 
 export const Skeleton = styled.div`
@@ -251,4 +252,13 @@ animation: wave-lines 2s infinite ease-out;
     100% {
         background-position: 468px 0;
     }
+`;
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: ${(props) => props.padding || '40px 0px'};
+  background: ${(props) => props.theme || 'transparent'};
+  background: ${(props) => props.gradient || 'undefined'};
+  position: relative;
 `;

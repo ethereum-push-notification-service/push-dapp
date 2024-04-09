@@ -12,6 +12,7 @@ import SpamBox from 'segments/Spam';
 
 // Internal Configs
 import APP_PATHS from 'config/AppPaths';
+import { ItemVV2 } from './reusables/SharedStylingV2';
 
 const InboxComponent = ({ isSpam }) => {
   const [showInbox, setShowInbox] = useState(!isSpam);
@@ -174,7 +175,7 @@ const NavTitleButton = styled.div`
 `;
 
 // css styles
-const SearchContainer = styled(Item)`
+const SearchContainer = styled(ItemVV2)`
   position: relative;
   max-width: 496px;
   min-width: 320px;
@@ -217,11 +218,11 @@ const SearchBar = styled.input`
   }
 `;
 
-const ItemIcon = styled(Item)`
+const ItemIcon = styled(ItemVV2)`
   cursor: pointer;
 `;
 
-const ItemIconRotate = styled(Item)`
+const ItemIconRotate = styled(ItemVV2)`
   cursor: pointer;
   transform: rotate(90deg);
 `;

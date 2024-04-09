@@ -369,9 +369,9 @@ const Inbox = ({ showFilter, setShowFilter, search, setSearch }) => {
           {notifications && (
             <Notifs id="scrollstyle-secondary">
               {bgUpdateLoading && (
-                <Item padding="10px 20px">
+                <ItemHV2 padding="10px 20px">
                   <LoaderSpinner type={LOADER_TYPE.SEAMLESS} />
-                </Item>
+                </ItemHV2>
               )}
               {run &&
                 welcomeNotifs.map((oneNotification, index) => {
@@ -420,9 +420,9 @@ const Inbox = ({ showFilter, setShowFilter, search, setSearch }) => {
               })}
 
               {loading && !bgUpdateLoading && (
-                <Item padding="10px 20px">
+                <ItemHV2 padding="10px 20px">
                   <LoaderSpinner type={LOADER_TYPE.SEAMLESS} />
-                </Item>
+                </ItemHV2>
               )}
             </Notifs>
           )}
