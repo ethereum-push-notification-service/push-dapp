@@ -351,6 +351,7 @@ export const textVariants = {
     lineHeight: '14px',
     letterSpacing: null,
     textTransform: 'uppercase',
+
   },
   'c-semibold': {
     fontSize: '10px',
@@ -359,6 +360,7 @@ export const textVariants = {
     lineHeight: '14px',
     letterSpacing: null,
     textTransform: null,
+
   },
   'c-bold': {
     fontSize: '12px',
